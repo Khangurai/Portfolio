@@ -99,14 +99,18 @@ a{
 }
 
 .qrcodes .large {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: -40px;
-    left: 30px;
+    width: 300px;
+    height: 300px;
+    position: fixed; /* Change to fixed to keep it in view */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
     cursor: none;
     z-index: 1;
+    background: #fff; /* Optional: add a background for better visibility */
+    border-radius: 10px; /* Optional: add rounded corners */
+    padding: 10px; /* Optional: add some padding */
 }
 .qrcodes:hover .large {
     display: block;
