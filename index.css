@@ -87,3 +87,27 @@ a{
     color: black;
     flex-direction: row;
 }
+.qrcodes {
+    display: inline-block;
+    position: relative;
+}
+
+.qrcodes .small {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.qrcodes .large {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    display: none;
+    cursor: none;
+    z-index: 1;
+}
+.qrcodes:hover .large {
+    display: block;
+}
